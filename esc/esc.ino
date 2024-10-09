@@ -17,5 +17,7 @@ int potVal = analogRead(potentiometerPin); // read input from potentiometer.
 
 int pwmVal = map(potVal,0, 1023, 180, 0); // maps potentiometer values to PWM value.
 
-servo.write(pwmVal); // Send signal to ESC.
+  
+servo.write(pwmVal);
+  // Send signal to ESC.
 }
